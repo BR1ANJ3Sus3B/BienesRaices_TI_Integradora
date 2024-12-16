@@ -1,4 +1,5 @@
 import express from "express";
+import upload from '../middleware/upload.js';
 import { 
     formularioLogin, 
     formularioRegistro, 
@@ -9,8 +10,10 @@ import {
     comprobarToken, 
     nuevoPassword, 
     autenticar, 
-    cerrarSesion, 
-    mostrarUsuario 
+    cerrarSesion,
+    mostrarUsuario,
+    subirFotoPerfil,
+    almacenarFotoPerfil
 } from "../controllers/usuarioController.js";
 
 const router = express.Router();
@@ -26,6 +29,10 @@ router.post('/cerrar-sesion', cerrarSesion);
 router.get('/registro', formularioRegistro);
 router.post('/registro', registrar);
 
+// Ruta para subir la foto de perfil
+router.get('/registro/:id', subirFotoPerfil);
+router.post('/registro/:id', upload.single('imagen'), almacenarFotoPerfil);
+
 // Confirmar cuenta
 router.get('/confirmar/:token', confirmar);
 
@@ -35,7 +42,6 @@ router.post('/olvide-password', resetPassword);
 router.get('/olvide-password/:token', comprobarToken);
 router.post('/olvide-password/:token', nuevoPassword);
 
-// Perfil del usuario
-router.get('/usuario', mostrarUsuario);
-
+ // Ruta para mostrar el perfil del usuario 
+router.get('/:id', mostrarUsuario);
 export default router;
