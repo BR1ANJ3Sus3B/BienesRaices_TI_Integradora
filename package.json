@@ -1,6 +1,6 @@
 {
-  "name": "bienesraices220262",
-  "version": "1.0.0",
+  "name": "bienesraices230308",
+  "version": "2.0.0",
   "description": "Mi primer proyecto de Nodejs",
   "type": "module",
   "main": "index.js",
@@ -21,7 +21,7 @@
     "MySQL",
     "Sequelize"
   ],
-  "author": "Esperanza Cruz Galindo",
+  "author": "Esperanza Cruz Galindo Editado por : Brian Jesus Mendoza Marquez ",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
