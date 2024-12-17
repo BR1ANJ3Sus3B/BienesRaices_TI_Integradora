@@ -805,10 +805,6 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
-.bg-cd {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 243 249 / var(--tw-bg-opacity));
-}
 .bg-green {
   --tw-bg-opacity: 1;
   background-color: rgb(104 175 33 / var(--tw-bg-opacity));
@@ -840,6 +836,7 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(254 249 195 / var(--tw-bg-opacity));
 }
+<<<<<<< HEAD
 .bg-error {
   --tw-bg-opacity: 1;
   background-color: rgb(244 67 54 / var(--tw-bg-opacity));
@@ -852,6 +849,11 @@ video {
 }
 .bg-center {
   background-position: center;
+=======
+.bg-cd {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 243 249 / var(--tw-bg-opacity));
+>>>>>>> parent of 80512ad (Brian-TI-08)
 }
 .object-cover {
   -o-object-fit: cover;
@@ -1079,6 +1081,7 @@ video {
     color: #FFF;
 }
 
+<<<<<<< HEAD
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1090,6 +1093,8 @@ video {
   background-color: rgb(220 243 249 / var(--tw-bg-opacity));
 }
 
+=======
+>>>>>>> parent of 80512ad (Brian-TI-08)
 .hover\:bg-gray-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -1108,6 +1113,11 @@ video {
 .hover\:bg-neon:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(92 92 244 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-cd:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 243 249 / var(--tw-bg-opacity));
 }
 
 .hover\:underline:hover {
